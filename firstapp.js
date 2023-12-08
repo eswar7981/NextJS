@@ -1,22 +1,7 @@
-const productOfTwo=(num1,num2)=>{
+const http=require('http')
 
-    return  num1*num2
+const server=http.createServer((req,res)=>{
+    console.log('Eswar')
+})
 
-}
-
-
-
-console.log(productOfTwo(5,4))
-
-
-
-
-const obj={
-    name:'Eswar',
-    course:'BackEnd',
-    details(){
-        console.log('Name of the student '+this.name+' doing '+this.course)
-    }
-}
-
-obj.details()
+server.listen(3000)
